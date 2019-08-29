@@ -44,9 +44,8 @@ html,body {
   }
 
   .jumbo-image {
-      width: 10%;
-      justify-content: center;
-      flex-wrap: wrap;
+        display: flex;
+        max-width: 100%;
   }
 
     
