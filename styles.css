@@ -26,6 +26,7 @@ a:hover {
 
 li {
     padding-right: 3em;
+    display: flex;
 }
 
 .logo {
@@ -122,12 +123,21 @@ li {
       display: flex;
       flex-direction: row-reverse;
       padding-bottom: 3em;
+      padding-left: 5em;
+      padding-right: 5em;
+
   }
 
   .text-wrapper {
     display: flex;
     flex-direction: column;
     width: 80%;
+  }
+
+  .text-wrapper button {
+      border-radius: 5em;
+      width: 10em;
+      padding: 0.9em 0;
   }
 
   .friendsphoto {
@@ -140,10 +150,61 @@ li {
   .scoring {
       display:flex;
       padding-top: 5em;
+      padding-left: 5em;
+      padding-right: 5em;
       background-color: #A6864b;
       padding-bottom: 3em;
   }
 
   .scoring button {
-      background-color: black;
+    border-radius: 5em;
+    width: 10em;
+    padding: 0.9em 0
   }
+
+  .boss {
+    display:flex;
+    flex-direction: row-reverse;
+    padding-top: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-color: #056cf2;
+    padding-bottom: 3em;
+}
+
+
+/* Media Queries here */
+@media only screen and (max-width: 600px) {
+    html,body {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+    }
+    .jumbo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    } 
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .jumbo-text {
+        padding: 0 0;
+        margin: 0 0;
+    }
+
+    .jumbo-image {
+        display: none;
+    }
+} 
