@@ -5,6 +5,7 @@ html,body {
     color: rgb(0, 0, 0);
   }
 
+
   nav {
     padding: 2% 3em;
     text-decoration: none;
@@ -13,31 +14,46 @@ html,body {
     justify-content: space-between;
 }
 
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #d83e58;
+}
+
+a:hover {
+    color: #2cbf89;
+}
+
+li {
+    padding-right: 3em;
+}
+
 .logo {
-    padding: 0 3em;
+    padding: 0 2em;
     display:flex;
     width: 50px;
 }
-.left-links {
+.links {
     display:flex;
-    flex-direction:row;
-}
-
-.right-links {
-    justify-content: right;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    margin-right: 5em;
 }
 
   .jumbo {
-      padding-top: 1%;
       display:flex;
       flex-direction: row-reverse;
       justify-content: space-between;
       background-color: #fff;
-      padding: 0 3em;
+      /* min-height: 100vh; */
+      flex-wrap:wrap;
+      background-image: url("./background.jpg");
   }
 
   .jumbo.text {
-      padding-top: 5em;
+      padding-top: 4em;
+      padding-left: 5em;
       display:flex;
       flex-direction:column;
       justify-content: unset;
@@ -45,9 +61,12 @@ html,body {
 
   .jumbo-image {
         display: flex;
-        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        margin-top: -40px;
+        width: 50%;
   }
-
     
 
   h1,h2 {
@@ -61,7 +80,7 @@ html,body {
 
   h2 {
     color: rgb(51, 51, 51);
-    font-size: 1em;
+    font-size: 3em;
     text-align: left;
     padding-bottom: 0.6em;
   }
@@ -77,6 +96,10 @@ html,body {
       line-height: 150%;
   }
 
+  .intro {
+      font-weight: bold;
+      color: rgb(17, 17, 17);
+  }
   button {
       background: linear-gradient(to bottom left, #d10c2c,#d83e58 );
       border-radius: 25px;
@@ -87,4 +110,40 @@ html,body {
       color: white;
       font-size: 1em;
       width:40%;
+  }
+
+    button:hover {
+        background-color: black;
+    }
+  .about_cdoa {
+      padding-top: 5em;
+      padding-left: 5em;
+      background-color: #2cbf89;
+      display: flex;
+      flex-direction: row-reverse;
+      padding-bottom: 3em;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .friendsphoto {
+    display: flex;  
+    width:40%;
+    align-self: center;
+    align-items: flex-start;
+  }
+
+  .scoring {
+      display:flex;
+      padding-top: 5em;
+      background-color: #A6864b;
+      padding-bottom: 3em;
+  }
+
+  .scoring button {
+      background-color: black;
   }
