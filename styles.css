@@ -51,8 +51,6 @@ li {
       flex-direction: row-reverse;
       justify-content: space-between;
       background-color: #fff;
-      /* min-height: 100vh; */
-      flex-wrap:wrap;
       background-image: url("./background.jpg");
   }
 
@@ -160,7 +158,7 @@ li {
       padding-bottom: 3em;
   }
 
-  .scoring button {
+  .innerbutton {
     border-radius: 5em;
     width: 10em;
     padding: 0.9em 0
@@ -178,6 +176,53 @@ li {
 
 
 /* Media Queries here */
+@media only screen and (max-width: 800px) {
+    .jumbo.text {
+        display:flex;
+        width: 40%;
+        margin-bottom: 3em;
+    }
+li {
+    font-size: 0.6em;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+.links {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+}
+h1 {
+    font-size: 2.5em;
+}
+.jumbo-image {
+    display:flex;
+    width: 20%;
+    align-self: center;
+    padding: 0 0;
+    margin: 0 4em;
+}
+
+button {
+    width: 60%;
+}
+
+.jumbo {
+    margin-left: -1em;
+}
+
+.about_cdoa, .scoring, .boss {
+padding: 1em 2.5em;
+}
+
+#headerimage {
+    width: 13em;
+}
+    }
 @media only screen and (max-width: 600px) {
     html,body {
         width: 100%;
@@ -202,15 +247,26 @@ li {
         align-items: center;
         padding: 0 0;
         padding-top: 100px;
-        min-height: 35vh;
+        min-height: 51vh;
+        width: 100%;
     } 
     img .jumbo-image {
         display: flex;
         flex-wrap: wrap;
+        margin: 0 0;
+        padding: 0 0;
+        width: 100%; 
+    }
+
+    .jumbo.text {
+        padding: 0 2em;
+        padding-top: 5.2em;
+        margin: 0 0;
+        width: 100%;
     }
 
     #headerimage {
-        width: 25vh;
+        width: 20vh;
         margin: 0 auto;
         margin-top: 1em;
         padding: 0 0;
@@ -231,12 +287,35 @@ li {
 
     button {
         width: 15em;
-        margin: 0 0;
+        margin: 0 auto;
     }
 
-    .jumbo.text {
-        padding: 0 2em;
-        padding-top: 1.2em;
-        margin: 0 0;
+   
+
+    .about_cdoa, .scoring, .boss {
+        display: flex;
+        padding: 2em 1.2em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    h2, p {
+        text-align: center;
+    }
+    p {
+        font-size: 1.4em;
+    }
+    button.innerbutton {
+        width: 100%;
+        padding: 5px 0;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: aqua;
+    }
+    
+   
+    
+
 } 
+
