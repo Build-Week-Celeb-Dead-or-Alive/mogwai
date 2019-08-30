@@ -12,6 +12,7 @@ html,body {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap:wrap;
 }
 
 a {
@@ -25,16 +26,20 @@ a:hover {
 }
 
 li {
+    flex-wrap:wrap;
     padding-right: 3em;
+    display: flex;
 }
 
 .logo {
+    flex-wrap:wrap;
     padding: 0 2em;
     display:flex;
     width: 50px;
 }
 .links {
     display:flex;
+    flex-wrap:wrap;
     justify-content: flex-end;
     align-items: center;
     width: 80%;
@@ -46,8 +51,6 @@ li {
       flex-direction: row-reverse;
       justify-content: space-between;
       background-color: #fff;
-      /* min-height: 100vh; */
-      flex-wrap:wrap;
       background-image: url("./background.jpg");
   }
 
@@ -122,12 +125,21 @@ li {
       display: flex;
       flex-direction: row-reverse;
       padding-bottom: 3em;
+      padding-left: 5em;
+      padding-right: 5em;
+
   }
 
   .text-wrapper {
     display: flex;
     flex-direction: column;
     width: 80%;
+  }
+
+  .text-wrapper button {
+      border-radius: 5em;
+      width: 10em;
+      padding: 0.9em 0;
   }
 
   .friendsphoto {
@@ -140,10 +152,170 @@ li {
   .scoring {
       display:flex;
       padding-top: 5em;
+      padding-left: 5em;
+      padding-right: 5em;
       background-color: #A6864b;
       padding-bottom: 3em;
   }
 
-  .scoring button {
-      background-color: black;
+  .innerbutton {
+    border-radius: 5em;
+    width: 10em;
+    padding: 0.9em 0
   }
+
+  .boss {
+    display:flex;
+    flex-direction: row-reverse;
+    padding-top: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-color: #056cf2;
+    padding-bottom: 3em;
+}
+
+
+/* Media Queries here */
+@media only screen and (max-width: 800px) {
+    .jumbo.text {
+        display:flex;
+        width: 40%;
+        margin-bottom: 3em;
+    }
+li {
+    font-size: 0.6em;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+.links {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+}
+h1 {
+    font-size: 2.5em;
+}
+.jumbo-image {
+    display:flex;
+    width: 20%;
+    align-self: center;
+    padding: 0 0;
+    margin: 0 4em;
+}
+
+button {
+    width: 60%;
+}
+
+.jumbo {
+    margin-left: -1em;
+}
+
+.about_cdoa, .scoring, .boss {
+padding: 1em 2.5em;
+}
+
+#headerimage {
+    width: 13em;
+}
+    }
+@media only screen and (max-width: 600px) {
+    html,body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+    .links {
+        display: none;
+    }
+    .jumbo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 0;
+        padding-top: 100px;
+        min-height: 51vh;
+        width: 100%;
+    } 
+    img .jumbo-image {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0;
+        padding: 0 0;
+        width: 100%; 
+    }
+
+    .jumbo.text {
+        padding: 0 2em;
+        padding-top: 5.2em;
+        margin: 0 0;
+        width: 100%;
+    }
+
+    #headerimage {
+        width: 20vh;
+        margin: 0 auto;
+        margin-top: 1em;
+        padding: 0 0;
+    }
+
+    h1 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    #intro-text {
+        display: none;
+    }
+
+    .intro {
+        display: none;
+    }
+
+    button {
+        width: 15em;
+        margin: 0 auto;
+    }
+
+   
+
+    .about_cdoa, .scoring, .boss {
+        display: flex;
+        padding: 2em 1.2em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2, p {
+        text-align: center;
+    }
+    p {
+        font-size: 1.4em;
+    }
+    button.innerbutton {
+        width: 100%;
+        padding: 5px 0;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: aqua;
+    }
+    
+   
+    
+
+} 
+
