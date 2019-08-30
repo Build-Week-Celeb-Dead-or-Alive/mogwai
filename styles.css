@@ -52,6 +52,7 @@ li {
       justify-content: space-between;
       background-color: #fff;
       background-image: url("./background.jpg");
+      padding-bottom: 1em;
   }
 
   .jumbo.text {
@@ -93,15 +94,20 @@ li {
   }
 
   p {
-      font-size: 0.9em;
+      font-size: 1.3em;
       color: #363636;
       text-align: left;
       line-height: 150%;
+      padding-bottom: 1.2em;
   }
 
   .intro {
       font-weight: bold;
       color: rgb(17, 17, 17);
+  }
+
+  #intro-text {
+      font-size: 0.9em;
   }
   button {
       background: linear-gradient(to bottom left, #d10c2c,#d83e58 );
@@ -174,6 +180,12 @@ li {
     padding-bottom: 3em;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
 
 /* Media Queries here */
 @media only screen and (max-width: 800px) {
